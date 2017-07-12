@@ -146,7 +146,7 @@ public class MainActivity extends Activity {
     public void AddNewL() {
         DatabaseReference databaseCustomer1 = FirebaseDatabase.getInstance().getReference("laundromat");
         String id = databaseCustomer1.push().getKey();
-        laundromat aa = new laundromat("11","dd","dd",5,4,"dd","dd","dd","dd");
+        laundromat aa = new laundromat("11","dd","dd",5,4,"dd","dd","dd","dd","ds");
         databaseCustomer1.child(id).setValue(aa);
         Toast.makeText(this, "add", Toast.LENGTH_SHORT).show();
 

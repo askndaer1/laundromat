@@ -18,12 +18,12 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Login" />
         <activity android:name=".Laundromast.LaundromatList" />
+        <activity android:name=".WelcomeActivity" />
         <activity android:name=".Register" />
         <activity android:name=".MainActivity" />
         <activity
-            android:name=".WelcomeActivity"
+            android:name=".Login"
             android:label="@string/title_activity_the_main"
             android:theme="@style/AppTheme"></activity>
     </application>

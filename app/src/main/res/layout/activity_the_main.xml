@@ -9,40 +9,130 @@
     tools:openDrawer="start">
 
 
-    <android.support.constraint.ConstraintLayout
+
+
+
+    <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-        <Button
-            android:id="@+id/button5"
-            android:layout_width="wrap_content"
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Button"
-            tools:layout_editor_absoluteY="259dp"
-            tools:layout_editor_absoluteX="148dp" />
+            android:gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="8dp"
+            android:layout_below="@+id/linearLayout2"
+            android:layout_centerHorizontal="true">
+
+            <Button
+                android:id="@+id/button5"
+                android:layout_width="150dp"
+                android:layout_height="120dp"
+                android:layout_alignBaseline="@+id/button4"
+                android:layout_alignBottom="@+id/button4"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_toEndOf="@+id/button4"
+                android:background="@drawable/box1"
+                android:drawableTop="@drawable/iron"
+                android:duplicateParentState="false"
+                android:text="Wash and Iron"
+                android:textColor="@color/album_title"
+                app:layout_constraintLeft_toLeftOf="parent" />
+
+            <Button
+                android:id="@+id/button4"
+                android:layout_width="150dp"
+                android:layout_height="120dp"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/imageView4"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/box1"
+                android:drawableTop="@drawable/iron"
+                android:duplicateParentState="false"
+                android:text="Wash and Iron"
+                android:textColor="@color/album_title"
+                app:layout_constraintLeft_toLeftOf="parent" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="178dp"
+            android:layout_height="171dp"
+            android:layout_alignTop="@+id/fab"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:src="@drawable/iconlaundry"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/imageView4"
+            android:layout_centerHorizontal="false"
+            android:layout_centerVertical="false"
+            android:layout_margin="10dp"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:id="@+id/linearLayout2">
+
+            <Button
+                android:id="@+id/button5"
+                android:layout_width="150dp"
+                android:layout_height="120dp"
+                android:layout_alignBaseline="@+id/button4"
+                android:layout_alignBottom="@+id/button4"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_toEndOf="@+id/button4"
+                android:background="@drawable/box1"
+                android:drawableTop="@drawable/iron"
+                android:duplicateParentState="false"
+                android:text="Wash and Iron"
+                android:textColor="@color/album_title"
+                app:layout_constraintLeft_toLeftOf="parent" />
+
+            <Button
+                android:id="@+id/button4"
+                android:layout_width="150dp"
+                android:layout_height="120dp"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/imageView4"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/box1"
+                android:drawableTop="@drawable/iron"
+                android:duplicateParentState="false"
+                android:text="Wash and Iron"
+                android:textColor="@color/album_title"
+                app:layout_constraintLeft_toLeftOf="parent" />
+        </LinearLayout>
 
         <android.support.design.widget.FloatingActionButton
             android:id="@+id/fab"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="bottom|end"
-            android:layout_margin="@dimen/fab_margin"
-            app:srcCompat="@android:drawable/ic_dialog_email"
-            android:layout_marginRight="37dp"
-            app:layout_constraintRight_toRightOf="parent"
+            android:layout_marginEnd="14dp"
+            android:layout_marginLeft="@dimen/fab_margin"
+            android:layout_marginRight="@dimen/fab_margin"
             app:layout_constraintBottom_toBottomOf="parent"
-            android:layout_marginBottom="33dp" />
-    </android.support.constraint.ConstraintLayout>
+            app:layout_constraintRight_toRightOf="parent"
+            app:srcCompat="@android:drawable/ic_menu_sort_by_size"
+            android:layout_marginTop="12dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true" />
 
 
+    </RelativeLayout>
 
-    <android.support.design.widget.NavigationView
-        android:id="@+id/nav_view"
-        android:layout_width="wrap_content"
-        android:layout_height="match_parent"
-        android:layout_gravity="start"
-        android:fitsSystemWindows="true"
-        app:headerLayout="@layout/nav_header_the_main"
-        app:menu="@menu/activity_the_main_drawer" />
 
 </android.support.v4.widget.DrawerLayout>

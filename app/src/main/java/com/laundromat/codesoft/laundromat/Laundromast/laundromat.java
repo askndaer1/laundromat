@@ -14,8 +14,11 @@ public class laundromat {
     private String laundromatLog;
     private String laundromatPhone;
     private String laundromatImage;
+    private String laundromatO;
+
     public laundromat(){}
-    public laundromat(String laundromatID, String laundromatName, String laundromatDescription, int laundromatAddres, float laundromatRating, String laundromatLat, String laundromatLog, String laundromatPhone, String laundromatImage) {
+
+    public laundromat(String laundromatID, String laundromatName, String laundromatDescription, int laundromatAddres, float laundromatRating, String laundromatLat, String laundromatLog, String laundromatPhone, String laundromatImage, String laundromatO) {
         this.laundromatID = laundromatID;
         this.laundromatName = laundromatName;
         this.laundromatDescription = laundromatDescription;
@@ -25,6 +28,7 @@ public class laundromat {
         this.laundromatLog = laundromatLog;
         this.laundromatPhone = laundromatPhone;
         this.laundromatImage = laundromatImage;
+        this.laundromatO = laundromatO;
     }
 
     public String getLaundromatID() {
@@ -97,5 +101,13 @@ public class laundromat {
 
     public void setLaundromatImage(String laundromatImage) {
         this.laundromatImage = laundromatImage;
+    }
+
+    public String getLaundromatO() {
+        return laundromatO;
+    }
+
+    public void setLaundromatO(String laundromatO) {
+        this.laundromatO = laundromatO;
     }
 }

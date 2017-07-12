@@ -20,6 +20,8 @@ import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
+import com.laundromat.codesoft.laundromat.Laundromast.LaundromatList;
+
 public class WelcomeActivity extends Activity {
 
     private ViewPager viewPager;
@@ -121,7 +123,7 @@ public class WelcomeActivity extends Activity {
 
     private void launchHomeScreen() {
         prefManager.setFirstTimeLaunch(false);
-        startActivity(new Intent(WelcomeActivity.this, Login.class));
+        startActivity(new Intent(WelcomeActivity.this,LaundromatList.class));
         finish();
     }
 

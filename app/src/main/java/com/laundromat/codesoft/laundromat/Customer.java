@@ -11,7 +11,7 @@ public class Customer {
     private String customerPhone;
     private String customerAddress;
     private  String customerEmail;
-
+    private  String customerP;
 
     public Customer(){}
 
